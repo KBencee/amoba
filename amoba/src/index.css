@@ -46,3 +46,37 @@ body{
     transform: translateY(5px);
   }
 }
+
+.o, .x, .draw{
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  animation: rotate 5s infinite linear;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.o{
+  background-color: var(--myorange);
+}
+
+.x{
+  background-color: var(--myblue);
+}
+
+.draw{
+  background-color: var(--mygray);
+}
+
+@keyframes rotate {
+  0% {font-size: 1vw;}
+  50%{font-size: 15vw;}
+  100% {font-size: 1vw;}
+}
